@@ -1,8 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   $dark: #333;
   $light: #f0f0f0;
   $accent: #50bbbd;
-  $MAX-WIDTH: 1440px;
+  $max-page-width: 1440px;
   $img-border-radius: 0.5rem;
 
   ::selection {
@@ -77,12 +86,12 @@ body {
 
   .section {
     margin: 2rem 0 1rem;
-    max-width: $MAX-WIDTH;
+    max-width: $max-page-width;
 
-    padding: 0 1rem;
+    padding: 0;
 
-    @media (min-width: $MAX-WIDTH) {
-      padding: 0;
+    @media (max-width: $max-page-width) {
+      padding: 0 1rem;
     }
   }
 
@@ -96,7 +105,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-    font-size: 1rem;
+    font-size: 0.875rem;
     letter-spacing: 0.125rem;
 
     padding: 6px 12px;
@@ -120,7 +129,7 @@ body {
     text-align: center;
 
     img {
-      max-width: $MAX-WIDTH;
+      max-width: $max-page-width;
       width: 100%;
       border-bottom-left-radius: $img-border-radius;
       border-bottom-right-radius: $img-border-radius;
@@ -192,11 +201,92 @@ body {
     }
   }
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4rem;
+
+    .header {
+      color: $dark;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .form-wrapper {
+      background-color: $light;
+      border-radius: $img-border-radius;
+      border-top: 0.25rem solid $accent;
+      border-bottom: 0.25rem solid $accent;
+
+      padding: 1rem;
+
+      width: 500px;
+
+      .contact__info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .label {
+        color: $dark;
+        font-size: 1rem;
+      }
+
+      input {
+        width: 220px;
+      }
+
+      textarea {
+        resize: none;
+        width: 100%;
+        height: 100px;
+      }
+
+      input,
+      textarea {
+        background-color: white;
+        border: none;
+        // border-bottom: 2px solid $accent;
+        border-radius: 0.125rem;
+        font-size: 1rem;
+        margin: 0.25rem 0 1rem;
+        padding: 0.5rem;
+      }
+
+      button {
+        background-color: $accent;
+        color: white;
+        border: 2px solid $accent;
+        border-radius: 0.125rem;
+
+        cursor: pointer;
+        font-size: 1rem;
+        letter-spacing: 0.125rem;
+
+        width: 100%;
+        padding: 6px 12px;
+
+        transition: ease-in-out 0.25s;
+
+        &:hover {
+          background-color: white;
+          color: $accent;
+        }
+      }
+    }
+  }
+
   .footer {
     border-top: 0.25rem solid $accent;
 
     .links {
-      margin-top: 1rem;
+      margin-top: 2rem;
 
       display: flex;
       flex-direction: row;

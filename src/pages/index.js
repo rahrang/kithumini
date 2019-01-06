@@ -5,6 +5,7 @@ import SEO from '../components/seo';
 
 import Landing from '../components/landing';
 import About from '../components/about';
+import Contact from '../components/contact';
 import Footer from '../components/footer';
 
 const IndexPage = () => (
@@ -23,6 +24,7 @@ const IndexPage = () => (
     />
     <Landing />
     <About />
+    <Contact />
     <Footer />
   </Layout>
 );
