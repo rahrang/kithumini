@@ -4,7 +4,7 @@ const Contact = () => (
   <div className="contact section">
     <h3 className="header">Contact Me!</h3>
     <div className="form-wrapper">
-      <form name="contact" method="POST" action="/" data-netlify>
+      <form name="contact" method="POST" action="/" data-netlify="true">
         <div className="contact__info">
           <label>
             <div className="label">Your Name</div>
@@ -19,7 +19,7 @@ const Contact = () => (
           <div className="label">Message</div>
           <textarea className="message" name="message" required />
         </label>
-        <div data-netlify-recaptcha />
+        <div data-netlify-recaptcha="true" />
         <button type="submit">Send</button>
       </form>
     </div>
