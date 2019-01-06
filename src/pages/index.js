@@ -10,7 +10,7 @@ import Footer from '../components/footer';
 
 const IndexPage = () => (
   <Layout>
-    <SEO />
+    <SEO title="Kithumini Jayasiri" />
     <Landing />
     <About />
     <Contact />
