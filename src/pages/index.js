@@ -10,18 +10,7 @@ import Footer from '../components/footer';
 
 const IndexPage = () => (
   <Layout>
-    <SEO
-      title="Kithumini Jayasiri"
-      keywords={[
-        `student`,
-        `athlete`,
-        `running`,
-        `health`,
-        `healthy`,
-        `nutrition`,
-        `science`,
-      ]}
-    />
+    <SEO />
     <Landing />
     <About />
     <Contact />
