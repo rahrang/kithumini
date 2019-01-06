@@ -242,14 +242,14 @@ body {
         width: 220px;
       }
 
-      textarea {
+      textarea.message {
         resize: none;
         width: 100%;
         height: 100px;
       }
 
       input,
-      textarea {
+      textarea.message {
         background-color: white;
         border: none;
         // border-bottom: 2px solid $accent;
