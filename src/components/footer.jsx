@@ -4,6 +4,7 @@ const Footer = () => (
   <div className="footer section">
     <div className="links">
       <a
+        className="link"
         href="https://linkedin.com/in/kithumini-jayasiri"
         target="_blank"
         rel="noopener noreferrer"
@@ -11,6 +12,7 @@ const Footer = () => (
         LinkedIn
       </a>
       <a
+        className="link"
         href="https://www.strava.com/athletes/27016777"
         target="_blank"
         rel="noopener noreferrer"
@@ -18,13 +20,19 @@ const Footer = () => (
         Strava
       </a>
       <a
+        className="link"
         href="https://instagram.com/cinnamonz"
         target="_blank"
         rel="noopener noreferrer"
       >
         Instagram
       </a>
-      {/* <a href="#" target="_blank" rel="noopener noreferrer">
+      {/* <a
+        className="link"
+        href="https://instagram.com/cinnamonz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Resume
       </a> */}
     </div>

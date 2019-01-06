@@ -22,11 +22,3 @@ const Landing = () => (
 );
 
 export default Landing;
-
-/* <img
-className="w-full m-0 h-full"
-srcSet={`${BASE_IMG_URL}home-576w 840w, ${BASE_IMG_URL}home-1440w 1440w`}
-sizes={`(max-width: ${SMALL_BREAKPOINT}px) 100vw, 100vw`}
-src={`${BASE_IMG_URL}home-1440w`}
-alt="Rahul Rangnekar"
-/> */
